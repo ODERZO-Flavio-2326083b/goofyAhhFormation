@@ -1,0 +1,23 @@
+body{
+    background-color: deepskyblue;
+    color: black;
+    padding-bottom: 5000px;
+}
+
+#btnRemonter{
+    color: white;
+    display: none;
+    position: fixed;
+    background-color: black;
+    padding: auto;
+    border: none;
+    z-index: 99;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btnRemonter:hover{
+    background-color: red;
+}

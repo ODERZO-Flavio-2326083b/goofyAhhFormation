@@ -6,9 +6,9 @@ body {
     color: white;
     background-size: cover;
     background-attachment: fixed;
-}
+  }
 
-#btnRemonter{
+  #btnRemonter{
     color: white;
     display: none;
     position: fixed;
@@ -24,43 +24,68 @@ body {
 
 #btnRemonter:hover{
     background-color: red;
+    cursor: pointer;
+}
 
-header {
+  header {
      background-color: black;
      color: white;
      padding: 10px 0;
      text-align: center;
-}    
+  }
 
-.center-container {
+  .center-container {       
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
+  }
 
-.container-left {
-    text-align: left;
-    width: 500px;
-    padding-left: 22%;
-    margin: 4%;
-    word-wrap: break-word;
-}
+  .row-container-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.container-right {
-    text-align: right;
-    width: 500px;
-    padding-right: 22%;
-    margin: 4%;
-    word-wrap: break-word;
-}
+  .row-container-right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-footer {
-    background-color: black;
-    color: white;
+  /*change row-reverse a row et order a 1 pour mettre les images et textes un peu plus à droite*/
+  /*
+  .row-container-right img {
+    order: 0;
+  }*/
+
+  .container-left {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    width: 500px;
+    margin: 4%;
+    padding-right: 0%;
+    word-wrap: break-word;
+    outline: 2px solid red;
+  }
+
+  .container-right {
+    text-align: center;
+    width: 500px;
+    margin: 4%;
+    padding-left: 0%;
+    word-wrap: break-word;
+    outline: 2px solid red;
+}
+
+
+  footer {
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 10px 0;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
 }

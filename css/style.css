@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,31 +26,72 @@ body {
 
 #btnRemonter:hover{
     background-color: red;
+}
+
+#menu {
+    background-color: black;
+    height: 100%;
+    width: 30%;   
+    padding: 0;
+    z-index: 1;
+    position: fixed; 
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 10px 25px 10px;
+    background-color: black;
+    transition: ease-in-out 0.25s;
+}
+
+#menu li:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.25s;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
 
 header {
-     background-color: black;
-     color: white;
-     padding: 10px 0;
-     text-align: center;
+    background: linear-gradient(to left, yellow, orange);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }    
 
 .center-container {
+    
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .container-left {
+    transition: ease-in 0.5s;
     text-align: left;
-    width: 500px;
+    width: 60%;
     padding-left: 22%;
     margin: 4%;
     word-wrap: break-word;
 }
 
 .container-right {
+    transition: ease-in 0.5s;
     text-align: right;
-    width: 500px;
+    width: 60%;
     padding-right: 22%;
     margin: 4%;
     word-wrap: break-word;
@@ -59,7 +102,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: block;
     left: 0;
     bottom: 0;
     width: 100%;

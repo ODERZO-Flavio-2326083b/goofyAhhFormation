@@ -1,4 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto:ital,wght@1,300;1,400&display=swap');
+
+@keyframes gradientAnimIn{
+    0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradientAnimOut {
+    0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+}
+
+#btnMenu {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px;  
+}
+
+#btnMenu:hover {
+    background: linear-gradient(-45deg, black, orange, black);
+    background-size: 1000%;
+    animation: gradientAnimIn 1s ease-in-out;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -31,11 +69,10 @@ body {
 #menu {
     background-color: black;
     height: 100%;
-    width: 30%;   
+    width: 30%;  
     padding: 0;
     z-index: 1;
     position: fixed; 
-    transition: opacity 0.5s, visibility 0.5s;
 }
 
 #menu ul{
@@ -53,25 +90,14 @@ body {
     transition: ease-in-out 0.25s;
 }
 
-@keyframes hoverAnim {
-    0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 #menu li:hover{
     object-fit: contain;
-    background: linear-gradient(-10deg, white 5%, black);
+    background: linear-gradient(to right, orange 15%, black 95%);
     color: black;
-    background-repeat: repeat-x;
-    background-size: 400% 400%;
-    animation: hoverAnim 2s ease infinite alternate;
+    transition: color 1s ease;
+    background-size: 400%;
+    animation: gradientAnimIn 1s ease;
+    background-color: black;
 }
 
 #menu a{
@@ -111,6 +137,12 @@ header {
     padding-right: 22%;
     margin: 4%;
     word-wrap: break-word;
+}
+
+.animated {
+
+    transition: ease-in 0.5s;
+    display: block;
 }
 
 footer {

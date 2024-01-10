@@ -1,4 +1,4 @@
-let menu = document.getElementById("menu");
+
 let btnRemonter = document.getElementById("btnRemonter");
 
 window.onscroll = function() {checkScroll()};
@@ -21,6 +21,12 @@ function remonter(){
 }
 
 function menuShow(){
-    console.log(menu.style.display);
-    (menu.style.display == "none") ? menu.style.display = "block" : menu.style.display = "none"
+    let menu = document.getElementById("menu");
+    console.log(menu.style.display)
+    if(menu.style.display == "block") {
+        menu.style.display = "none";
+    }
+      else {
+        menu.style.display = "block";
+    }
 }

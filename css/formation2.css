@@ -33,16 +33,17 @@ header {
 }    
 
 .center-container {
-    display: flex;
+    display:flex;
     justify-content: center;
-    align-items:center;
-    flex-direction: column;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
 }
 
 .container-left {
     text-align: left;
     width: 500px;
-    padding-left: 35%;
+    padding-left: 5%;
     margin: 4%;
     word-wrap: break-word;
 }
@@ -50,31 +51,10 @@ header {
 .container-right {
     text-align: right;
     width: 500px;
-    padding-right: 35%;
+    padding-right: 5%;
     margin: 4%;
     word-wrap: break-word;
 }
-
-.formation {
-    color: rgb(0, 0, 0); 
-    line-height: 12px; 
-    padding: 8px; 
-    border-radius: 0px; 
-    background: linear-gradient(to left, #da8b04, #ffac1d); 
-    border: 2px solid rgb(46, 1, 1); 
-    display: inline-block;
-    
-
-}
-    
-.formation a {
-    text-decoration: none;
-    font-size: 20px;
-    color:rgb(0, 0, 0);
-}
-
-
-
 
 footer {
     background-color: black;

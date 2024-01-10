@@ -40,16 +40,16 @@ header {
 }
 
 .container-left {
+    display: flex;
     text-align: left;
-    width: 500px;
-    padding-left: 35%;
+    width: 80%;
     margin: 4%;
     word-wrap: break-word;
 }
 
 .container-right {
     text-align: right;
-    width: 500px;
+    width: 42%;
     padding-right: 35%;
     margin: 4%;
     word-wrap: break-word;
@@ -57,24 +57,33 @@ header {
 
 .formation {
     color: rgb(0, 0, 0); 
-    line-height: 12px; 
-    padding: 8px; 
-    border-radius: 0px; 
+    padding: 10px 10px; 
+    border-radius: 10px; 
     background: linear-gradient(to left, #da8b04, #ffac1d); 
-    border: 2px solid rgb(46, 1, 1); 
+    border: 1% solid rgb(46, 1, 1); 
     display: inline-block;
-    
-
-}
-    
-.formation a {
     text-decoration: none;
     font-size: 20px;
+
+}
+
+.formation a {
+    
     color:rgb(0, 0, 0);
 }
 
+.prix {
+    color:#da8b04;
+}
 
+.text {
+    padding: 5%;
+    width: 200%;
+}
 
+.img {
+    width:350%;
+}
 
 footer {
     background-color: black;

@@ -45,6 +45,7 @@ header {
     width: 80%;
     margin: 4%;
     word-wrap: break-word;
+    flex-wrap: wrap;
 }
 
 .container-right {
@@ -82,7 +83,7 @@ header {
 }
 
 .img {
-    width:350%;
+    width:100%;
 }
 
 footer {

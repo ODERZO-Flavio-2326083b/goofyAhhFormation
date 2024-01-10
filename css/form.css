@@ -1,0 +1,24 @@
+@import "style.css";
+
+form {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto' sans-serif;
+}
+
+form *{
+    list-style: none;
+    padding: 20px;
+    
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border: 1px white solid;
+    background-color: orange;
+    color: white;
+}

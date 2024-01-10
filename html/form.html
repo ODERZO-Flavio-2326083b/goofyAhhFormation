@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVENIR RICHE</title>
     <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
     <header>
@@ -13,19 +13,28 @@
         <button id="btnMenu" onclick="menuShow()">Explorer</button>
     </header>
     <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>       
-    <div id="menu">
-        <ul>
-            <a href="#index"><li>Accueil</li></a>
-            <a href="#formations"><li>Nos formations</li></a>
-            <a href="#contact"><li>Contact</li></a>
-        </ul>    
-    </div>
+    
+    <ul id="menu">
+        <a href="../index.html"><li>Accueil</li></a>
+        <a href="#formations"><li>Nos formations</li></a>
+        <a href="#contact"><li>Contact</li></a>
+    </ul>    
 
-    <form id="formulaire">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
+    <form action="mailto:..@.." method="POST" enctype="text/plain">
+        <ul>
+            <li>
+              <label for="name">Prénom :</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="text" id="mail" name="user_email" />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+        </ul>
     </form>
 
     <footer>

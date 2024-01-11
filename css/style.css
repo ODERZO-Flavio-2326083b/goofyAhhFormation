@@ -18,8 +18,42 @@
 	}
 }
 
+@keyframes slideGauche {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideDroite {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+  
+nav {
+    padding: 0px;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #btnMenu {
@@ -52,24 +86,25 @@ body {
     display: none;
     position: fixed;
     background-color: black;
-    padding: auto;
     border: none;
     z-index: 99;
     bottom: 40px;
     right: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 20px;
 }
 
 #btnRemonter:hover{
     background-color: red;
+    transition: background-color 0.7s ease-in-out;
 }
 
 #menu {
     background-color: black;
-    height: 100%;
+    height: 110%;
     width: 30%;  
     padding: 0;
+    margin: 0;
     z-index: 1;
     position: fixed; 
 }
@@ -96,7 +131,21 @@ body {
     transition: color 1s ease;
     background-size: 400%;
     animation: gradientAnimIn 1s ease;
-    background-color: black;
+}
+
+#menu img{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    transition: ease-in-out 0.25s;
+}
+
+@media (max-width: 1000px) {
+    #menu img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 #menu a{
@@ -108,12 +157,11 @@ body {
 header {
     background: linear-gradient(to left, yellow, orange);
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }    
 
 .center-container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +175,7 @@ header {
     padding-left: 22%;
     margin: 4%;
     word-wrap: break-word;
+    animation: slideGauche 1s ease-in-out;
 }
 
 .container-right {
@@ -136,6 +185,7 @@ header {
     padding-right: 22%;
     margin: 4%;
     word-wrap: break-word;
+    animation: slideDroite 1s ease-in-out;
 }
 
 .animated {
@@ -149,7 +199,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: block;
     left: 0;
     bottom: 0;
     width: 100%;

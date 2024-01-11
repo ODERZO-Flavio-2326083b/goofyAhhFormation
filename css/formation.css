@@ -33,7 +33,7 @@ header {
      text-align: center;
 }    
 
-.center-container {
+.center-container { 
     display: flex;
     justify-content: center;
     align-items:center;
@@ -41,18 +41,22 @@ header {
     margin: 2%;
 }
 
-.container-left {
+.container-top {
     display: flex;
     word-wrap: break-word;
     width: 65%;
     margin-bottom: 6%;
 }
 
-.container-right {
-    display: flex;
-    word-wrap: break-word;
-    width: 65%;
-    margin-bottom: 6%;
+.image-container {
+    width: 100%;
+}
+
+.img {  
+    width: 44%;
+    height: auto;
+    border-radius: 10px;
+    border: 1% solid rgb(46, 1, 1);
 }
 
 .formation {
@@ -66,30 +70,23 @@ header {
     font-size: 20px;
 }
 
-.formation a {
-    
-    color:rgb(0, 0, 0);
+.formation a {   
+    color: rgb(0, 0, 0);
 }
 
 .prix {
-    color:#da8b04;
+    color: #da8b04;
 }
 
-.text-right {
+.text-top {
     width: 100%;
     padding-left: 5%;
 }
 
-.text-left {
-    width: 100%;
-    padding-right: 5%;
-}
-
-.img {  
-    width: 44%;
-    height: 100%;
-    border-radius: 10px;
-    border: 1% solid rgb(46, 1, 1);
+.text-middle {
+    width: 75%;
+    text-align: justify;
+    line-height: 2;
 }
 
 footer {
@@ -97,23 +94,17 @@ footer {
     color: white;
     text-align: center;
     padding: 0.01% 0;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
 @media (max-width: 1000px) {
-    .container-left{
+    .container-top{
         flex-wrap: wrap;
     }
-    .container-left img {
-        width: 100%;
-        height: 40%;
-    }
-    .container-right{
-        flex-wrap: wrap-reverse;
-    }
-    .container-right img {
+    .container-top img {
         width: 100%;
         height: 40%;
     }

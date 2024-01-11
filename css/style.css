@@ -38,23 +38,21 @@ header {
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    margin: 2%;
 }
 
 .container-left {
     display: flex;
-    text-align: left;
-    width: 80%;
-    margin: 4%;
     word-wrap: break-word;
-    
+    width: 65%;
+    margin-bottom: 6%;
 }
 
 .container-right {
     display: flex;
-    text-align: right;
-    width: 80%;
-    margin: 4%;
     word-wrap: break-word;
+    width: 65%;
+    margin-bottom: 6%;
 }
 
 .formation {
@@ -78,13 +76,21 @@ header {
     color:#da8b04;
 }
 
-.text {
-    padding: 5%;
+.text-right {
     width: 100%;
+    padding-left: 5%;
 }
 
-.img {
-    width:100%;
+.text-left {
+    width: 100%;
+    padding-right: 5%;
+}
+
+.img {  
+    width: 44%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1% solid rgb(46, 1, 1);
 }
 
 footer {

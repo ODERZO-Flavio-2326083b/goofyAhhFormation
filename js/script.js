@@ -1,5 +1,7 @@
 let btnRemonter = document.getElementById("btnRemonter");
 
+let baseSheet = document.getElementById('stylesheet').getAttribute('href');
+
 window.onscroll = function() {
     checkScroll();
 };
@@ -75,5 +77,13 @@ function menuShow(){
         menu.style.display = "none";
     } else {
         menu.style.display = "block";
+    }
+}
+
+function changesheet(newSheet) {
+    if(document.getElementById('stylesheet').getAttribute('href') === baseSheet){
+        document.getElementById('stylesheet').setAttribute('href', newSheet);
+    } else {
+        document.getElementById('stylesheet').setAttribute('href', baseSheet);
     }
 }

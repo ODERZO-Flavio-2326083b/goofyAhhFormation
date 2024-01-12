@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@keyframes gradientAnimIn{
+    0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradientAnimOut {
+    0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+@keyframes slideGauche {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideDroite {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+  
+nav {
+    padding: 0px;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#btnMenu {
+    background: linear-gradient(-45deg, rgb(255, 58, 156), rgb(252, 165, 5), rgb(255, 0, 0));
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 15px;  
+}
+
+#btnMenu:hover {
+    background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(252, 165, 5), rgb(255, 58, 156));
+    background-size: 1000%;
+    animation: gradientAnimIn 1s ease-in-out;
+}
+
+body {
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(255, 58, 156),rgb(143, 58, 255), rgb(252, 165, 5), rgb(255, 0, 0));
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#btnRemonter{
+    color: white;
+    display: none;
+    position: fixed;
+    background-color: black;
+    padding: auto;
+    border: none;
+    z-index: 99;
+    bottom: 2.5%;
+    right: 2.5%;
+    border-radius: 20px;
+    font-size: 100%;
+}
+
+#btnRemonter:hover{
+    background-color: red;
+    transition: background-color 0.7s ease-in-out;
+}
+
+#menu {
+    background: linear-gradient(-45deg, rgb(0, 255, 55), rgb(5, 238, 255), rgb(0, 89, 255));
+    height: 110%;
+    width: 20%;  
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: fixed; 
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li{
+    text-align: center;
+    justify-content: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    padding: 25px 10px 25px 10px;
+    background:  linear-gradient(-45deg, rgb(0, 255, 55), rgb(5, 238, 255), rgb(0, 89, 255));
+    transition: ease-in-out 0.25s;
+}
+
+#menu li:hover{
+    object-fit: contain;
+    background:linear-gradient(-45deg, rgb(0, 89, 255), rgb(5, 238, 255), rgb(0, 255, 55));
+    color: black;
+    transition: color 1s ease;
+    background-size: 400%;
+    animation: gradientAnimIn 1s ease;
+}
+
+#menu img{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    transition: ease-in-out 0.25s;
+}
+
+@media (max-width: 1000px) {
+    #menu img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+header {
+     background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(255, 176, 5), rgb(238, 255, 0), rgb(0, 255, 21), rgb(0, 255, 242), rgb(4, 0, 255), rgb(195, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
+     color: white;
+     padding: 10px 0;
+     text-align: center;
+}    
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.container-left {
+    display: flex;
+    word-wrap: break-word;
+    width: 65%;
+    margin-bottom: 6%;
+}
+
+.container-right {
+    display: flex;
+    word-wrap: break-word;
+    width: 65%;
+    margin-bottom: 6%;
+}
+
+.formation {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #da8b04, #ffac1d); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.formation a {
+    
+    color:rgb(0, 0, 0);
+}
+
+.prix {
+    color:#9b0093;
+}
+
+.text-right {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.text-left {
+    width: 100%;
+    padding-right: 5%;
+}
+
+.img {  
+    width: 44%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1% solid rgb(46, 1, 1);
+}
+
+.animated {
+
+    transition: ease-in 0.5s;
+    display: block;
+}
+
+
+footer {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 176, 5), rgb(238, 255, 0), rgb(0, 255, 21), rgb(0, 255, 242), rgb(4, 0, 255), rgb(195, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0.01% 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .container-left{
+        flex-wrap: wrap;
+    }
+    .container-left img {
+        width: 100%;
+        height: 40%;
+    }
+    .container-right{
+        flex-wrap: wrap-reverse;
+    }
+    .container-right img {
+        width: 100%;
+        height: 40%;
+    }
+}

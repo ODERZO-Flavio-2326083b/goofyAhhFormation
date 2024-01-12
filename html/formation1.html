@@ -3,6 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Vous avez des soucis dans la vie? Ne cherchez pas plus loin,
+    c'est ici que nous allons changer vie médiocre en vie qui ferait rêver les plus grands instagrammeurs.">
    <title>DEVENIR RICHE</title>
    <link rel="icon" href="Drawing.ico">
    <link rel="stylesheet" href="../css/formation.css">
@@ -10,6 +12,7 @@
 <body>
     <header>
         <h2>GoofyAhhFormation<h2>
+        <button id="btnMenu" onclick="menuShow()">Explorer</button>
     </header>
     <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>
     <nav>
@@ -19,7 +22,7 @@
             <a href="contact.html"><li>Contact</li></a>
             <li><img src="../img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
                 'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
-            <li><button onclick="changesheet()" id="btnCss" title="changesheet">Dark Mode ?</button></li>
+            <li><button onclick="changesheet('../css/goofy.css')" id="btnCss" title="changesheet">Dark Mode ?</button></li>
         </ul>
     </nav>     
     <section class="center-container">

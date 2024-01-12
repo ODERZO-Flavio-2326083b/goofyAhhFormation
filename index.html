@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vous avez des soucis dans la vie? Ne cherchez pas plus loin, 
-    c'est ici que nous allons changer vie médiocre en vie qui ferait rêver les plus grands instagrammeurs.">
-    <title>DEVENIR RICHE</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Vous avez des soucis dans la vie? Ne cherchez pas plus loin, 
+   c'est ici que nous allons changer vie médiocre en vie qui ferait rêver les plus grands instagrammeurs.">
+   <title>DEVENIR RICHE</title>
+   <link rel="icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/accueil.css" id="stylesheet">
 </head>
 <body>
     <header>
         <h2>GoofyAhhFormation<h2>
         <button id="btnMenu" onclick="menuShow()">Explorer</button>
-    </header>
-    <!-- bouton pour remonter en haut de la page -->
-    <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>
-    <nav>
+   </header>
+   <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>       
+   <nav>
         <ul id = "menu">
-            <a href="#index"><li>Accueil</li></a>
-            <a href="#formations"><li>Nos formations</li></a>
-            <a href="html/form.html"><li>Contact</li></a>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formations.html">Nos formations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><img src="img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
+                'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
+            <li><button onclick="changesheet('css/goofy.css')" id="btnCss" title="btnCss">Dark Mode ?</button></li>
         </ul>
-    </nav>    
+    </nav>   
+    <section class="text-middle">
+      <iframe src="https://www.youtube.com/embed/p3O3OxDmao0?si=-rtuaxdhCaS9Yeyf" title="Lecteur de vidéo youtube" frameborder="0" allowfullscreen width="800" height="450"></iframe>
+      <a href="https://www.youtube.com/watch?v=Y5HSR_gUS6E" target="_blank">
+        <small style="font-style: italic; color: lightgray;">Source : Seb La Frite</small>
+      </a>
+      <h3>
+        Bienvenue dans le monde captivant de l'ascension vers la réussite avec Thomas, Islem, et Flavio, 
+        trois visionnaires intrépides qui ont uni leurs forces pour créer une plateforme révolutionnaire.
+      </h3>
+      
+      <h3>
+        Thomas, le coach en séduction, Islem, le business manager, et Flavio, le multimilliardaire, 
+        ont combiné leur expertise pour concevoir un site de vente de formations innovant qui promet de transformer des vies et de propulser chacun vers la richesse.
+      </h3>
 
-    <section class="center-container">
-        <section class="container-left">
-            <h2>FORMATION 1</h2>
-            <p>FJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKD</p>
-        </section> 
-
-        <section class="container-right">
-            <h2>FORMATION 2</h2>
-            <p>FJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKD</p>
-        </section> 
-
-        <section class="container-left">
-            <h2>FORMATION 3</h2>
-            <p>FJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKD</p>
-        </section> 
-
-        <section class="container-right">
-            <h2>FORMATION 4</h2>
-            <p>FJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKDFJOSDHGUISDFJNGLSKD</p>
-        </section> 
+      <h3>
+        Thomas, maître incontesté de l'art de la séduction, partage ses connaissances inestimables pour aider les individus à développer leur confiance en soi, 
+        à maîtriser l'art de la communication et à créer des relations enrichissantes. 
+      </h3> 
+      <h3>
+        Islem, le stratège en affaires avisé, apporte son savoir-faire pour guider les aspirants entrepreneurs à travers les méandres du monde des affaires, 
+        leur enseignant les principes essentiels pour bâtir des entreprises prospères.
+      </h3>  
+      <h3>  
+        Quant à Flavio, le multimilliardaire, il dévoile ses secrets pour atteindre le sommet financier. 
+        À travers des méthodes inédites et des conseils éprouvés, il offre un accès exclusif à une philosophie de réussite éprouvée qui a propulsé sa fortune.
+      </h3> 
+      <h3>
+        Ensemble, ces trois pionniers ont créé une plateforme révolutionnaire, une destination unique où l'expertise de chacun fusionne pour offrir 
+        des formations complètes et pratiques. Rejoignez-nous dans cette aventure unique vers l'abondance et la prospérité, et découvrez comment 
+        transformer vos rêves en réalité sur le chemin de la richesse avec Thomas, Islem et Flavio. 
+      </h3>
+      <h3 style="font-size: largest;"> 
+        Bienvenue sur notre site qui changera votre vie à jamais.
+      </h3>
     </section>
-    <footer>
+    <br>
+   <footer>
        <p>© Copyright 2023 GoofyAhhFormation</p>
     </footer>
 </body>

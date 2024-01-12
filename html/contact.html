@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vous avez des soucis dans la vie? Ne cherchez pas plus loin,
+    c'est ici que nous allons changer vie médiocre en vie qui ferait rêver les plus grands instagrammeurs.">
+    <title>DEVENIR RICHE</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/contact.css" id="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>GoofyAhhFormation<h2>
+        <button id="btnMenu" onclick="menuShow()">Explorer</button>
+    </header>
+    <!-- bouton pour remonter en haut de la page -->
+    <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>       
+    <nav>
+        <ul id = "menu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../html/formations.html">Nos formations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><img src="../img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
+                'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
+            <li><button onclick="changesheet('../css/goofy.css')" id="btnCss" title="btnCss">Dark Mode</button></li>
+        </ul>
+    </nav>    
+    <h2>Formulaire de contact<h2>
+    <!-- Formulaire de contact -->
+    <form action="mailto:goofyahhformation@alwaysdata.net" method="POST" enctype="text/plain">
+        <ul>
+            <li>
+              <label for="name">Prénom :</label>
+              <input type="text" id="prenom" name="prenom">
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="text" id="mail" name="mail">
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="msg" placeholder="Donnez votre avis (et votre carte bleue)"></textarea>
+            </li>
+            <li>
+                <label for="mere" class="mere">J'accepte de vendre ma mère.</label>
+                <input type="checkbox" id="mere" name="mere" class = "checkmere">
+            </li>
+            <li>
+              <button type="submit">Envoyer</button>
+            </li>
+        </ul>
+    </form>
+
+    <footer>
+        <p>© Copyright 2023 GoofyAhhFormation</p>
+    </footer>
+</body>
+
+<script src="../js/script.js"></script>

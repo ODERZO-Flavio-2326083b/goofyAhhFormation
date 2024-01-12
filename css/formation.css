@@ -1,0 +1,166 @@
+@import "style.css";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1818;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.payment {
+    text-align: center;
+    margin: 2%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/money.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px -5px 10px rgb(0, 0, 0);
+}
+  
+  .popup-content {
+    padding: 20px;
+  }
+
+#btnRemonter{
+    color: white;
+    display: none;
+    position: fixed;
+    background-color: black;
+    padding: auto;
+    border: none;
+    z-index: 99;
+    bottom: 2.5%;
+    right: 2.5%;
+    border-radius: 20px;
+    font-size: 100%;
+}
+
+#btnRemonter:hover{
+    background-color: red;
+}
+
+header {
+     background-color: black;
+     color: white;
+     padding: 10px 0;
+     text-align: center;
+}    
+
+.center-container { 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.container-top {
+    display: flex;
+    word-wrap: break-word;
+    width: 65%;
+    margin-bottom: 6%;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.img {  
+    width: 44%;
+    height: auto;
+    border-radius: 10px;
+    border: 1% solid rgb(46, 1, 1);
+}
+
+.formation {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #da8b04, #ffac1d); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.PayPal {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #044fda, #1d87ff); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.Sanguin {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #da0404, #ff1d1d); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.CB {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #04da44, #0be04b); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.formation a {   
+    color: rgb(0, 0, 0);
+}
+
+.prix {
+    color: #da8b04;
+}
+
+.text-top {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.text-middle {
+    width: 75%;
+    text-align: justify;
+    line-height: 2;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 0.01% 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    .container-top{
+        flex-wrap: wrap;
+    }
+    .container-top img {
+        width: 100%;
+        height: 40%;
+    }
+}

@@ -27,6 +27,15 @@ video iframe {
     align-items: center;
 }
 
+footer {
+    color: white;
+    text-align: center;
+    padding: 0.01% 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 @media (max-width: 1000px) {
     .text-middle{
         flex-direction: column;

@@ -61,7 +61,6 @@ function animateClose(element) {
     function frame() {
         height += 0.8;
         element.style.transform = `translateY(${height}%)`;
-
         if (height < 100) {
             requestAnimationFrame(frame);
         } else {

@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>DEVENIR RICHE</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Vous avez des soucis dans la vie? Ne cherchez pas plus loin, 
+   c'est ici que nous allons changer vie médiocre en vie qui ferait rêver les plus grands instagrammeurs.">
+   <title>DEVENIR RICHE</title>
+   <link rel="icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="../css/accueil.css">
+   <script src="js/script.js"></script>
 </head>
-
 <body>
-    SALUT
-    <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>  
+   <header>
+        <h2>GoofyAhhFormation<h2>
+        <button id="btnMenu" onclick="menuShow()">Explorer</button>
+   </header>
+   <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>       
+   <nav>
+        <ul id = "menu">
+            <a href="index.html"><li>Accueil</li></a>
+            <a href="html/formations.html"><li>Nos formations</li></a>
+            <a href="html/contact.html"><li>Contact</li></a>
+            <li><img src="img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
+                'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
+            <li><button onclick="changesheet()" id="btnCss" title="changesheet">Dark Mode ?</button></li>
+        </ul>
+    </nav>   
+    <section class="text-middle">
+
+      <div id="video"> 
+        <iframe src="https://www.youtube.com/embed/p3O3OxDmao0?si=-rtuaxdhCaS9Yeyf" title="Lecteur de vidéo youtube" frameborder="0" allowfullscreen></iframe>
+        <small style="font-style: italic; color: lightgray;">Vidéo originale : Seb La Frite</small>  
+      </div>
+      <section>
+      <h3>
+        Bienvenue dans le monde captivant de l'ascension vers la réussite avec Thomas, Islem, et Flavio, 
+        trois visionnaires intrépides qui ont uni leurs forces pour créer une plateforme révolutionnaire.
+      </h3>
+      
+      <h3>
+        Thomas, le coach en séduction, Islem, le business manager, et Flavio, le multimilliardaire, 
+        ont combiné leur expertise pour concevoir un site de vente de formations innovant qui promet de transformer des vies et de propulser chacun vers la richesse.
+      </h3>
+
+      <h3>
+        Thomas, maître incontesté de l'art de la séduction, partage ses connaissances inestimables pour aider les individus à développer leur confiance en soi, 
+        à maîtriser l'art de la communication et à créer des relations enrichissantes. 
+      </h3> 
+      <h3>
+        Islem, le stratège en affaires avisé, apporte son savoir-faire pour guider les aspirants entrepreneurs à travers les méandres du monde des affaires, 
+        leur enseignant les principes essentiels pour bâtir des entreprises prospères.
+      </h3>  
+      <h3>  
+        Quant à Flavio, le multimilliardaire, il dévoile ses secrets pour atteindre le sommet financier. 
+        À travers des méthodes inédites et des conseils éprouvés, il offre un accès exclusif à une philosophie de réussite éprouvée qui a propulsé sa fortune.
+      </h3> 
+      <h3>
+        Ensemble, ces trois pionniers ont créé une plateforme révolutionnaire, une destination unique où l'expertise de chacun fusionne pour offrir 
+        des formations complètes et pratiques. Rejoignez-nous dans cette aventure unique vers l'abondance et la prospérité, et découvrez comment 
+        transformer vos rêves en réalité sur le chemin de la richesse avec Thomas, Islem et Flavio. 
+      </h3>
+      <h3 style="font-size: largest;"> 
+        Bienvenue sur notre site qui changera votre vie à jamais.
+      </h3>
+    </section>
+    <br>
+   <footer>
+       <p>© Copyright 2023 GoofyAhhFormation</p>
+   </footer>
 </body>
 </html>
 
-<script src="js/script.js"></script>
+

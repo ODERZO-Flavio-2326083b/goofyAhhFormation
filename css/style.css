@@ -1,7 +1,100 @@
-body{
-    background-color: deepskyblue;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto:ital,wght@1,300;1,400&display=swap');
+
+@keyframes gradientAnimIn{
+    0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradientAnimOut {
+    0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+@keyframes slideGauche {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideDroite {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+  
+nav {
+    padding: 0px;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#btnMenu {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px;  
+}   
+
+#btnMenu:hover {
+    background: linear-gradient(-45deg, black, orange, black);
+    background-size: 1000%;
+    animation: gradientAnimIn 1s ease-in-out;
+}
+
+#btnCss {
+    background-color: white;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px;  
+}
+
+#btnCss:hover {
+    background-color: #ffac1d;
     color: black;
-    padding-bottom: 5000px;
+    transition: all 0.5s ease-in-out;
+    background-size: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1818;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #btnRemonter{
@@ -12,12 +105,118 @@ body{
     padding: auto;
     border: none;
     z-index: 99;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 10px;
-    font-size: 20px;
+    bottom: 2.5%;
+    right: 2.5%;
+    border-radius: 20px;
+    font-size: 100%;
 }
 
 #btnRemonter:hover{
     background-color: red;
+    transition: background-color 0.7s ease-in-out;
+}
+
+#menu {
+    background-color: black;
+    height: 110%;
+    width: 30%;  
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: fixed; 
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 10px 25px 10px;
+    background-color: black;
+    transition: ease-in-out 0.25s;
+}
+
+#menu li:hover{
+    object-fit: contain;
+    background: linear-gradient(to right, orange 15%, black 95%);
+    color: black;
+    transition: color 1s ease;
+    background-size: 400%;
+    animation: gradientAnimIn 1s ease;
+}
+
+#menu img{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    transition: ease-in-out 0.25s;
+}
+
+@media (max-width: 1000px) {
+    #menu img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+header {
+    background: linear-gradient(to left, yellow, orange);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}    
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-left {
+    transition: ease-in 0.5s;
+    text-align: left;
+    width: 60%;
+    padding-left: 22%;
+    margin: 4%;
+    word-wrap: break-word;
+    animation: slideGauche 1s ease-in-out;
+}
+
+.container-right {
+    transition: ease-in 0.5s;
+    text-align: right;
+    width: 60%;
+    padding-right: 22%;
+    margin: 4%;
+    word-wrap: break-word;
+    animation: slideDroite 1s ease-in-out;
+}
+
+.animated {
+
+    transition: ease-in 0.5s;
+    display: block;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

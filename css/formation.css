@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto:ital,wght@1,300;1,400&display=swap');
+@import "style.css";
+
+
+.container-top {
+    display: flex;
+    word-wrap: break-word;
+    width: 65%;
+    margin-bottom: 6%;
+}
+
+.image-container {
+    width: 100%;
+}
+
+
+.text-top {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.text-middle {
+    width: 75%;
+    text-align: justify;
+    line-height: 2;
+}
+
+@media (max-width: 1000px) {
+    .container-top{
+        flex-wrap: wrap;
+    }
+    .container-top img {
+        width: 100%;
+        height: 40%;
+    }
+}

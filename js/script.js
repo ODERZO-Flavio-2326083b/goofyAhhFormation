@@ -6,6 +6,7 @@ window.onscroll = function() {
     checkScroll();
 };
 
+
 function checkScroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         btnRemonter.style.display = "block";

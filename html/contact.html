@@ -18,12 +18,12 @@
     <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>       
     <nav>
         <ul id = "menu">
-            <a href="../index.html"><li>Accueil</li></a>
-            <a href="formations.html"><li>Nos formations</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="formations.html">Nos formations</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><img src="../img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
                 'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
-            <li><button onclick="changesheet('../css/goofy.css')" id="changesheet" title="changesheet">Dark Mode</button></li>
+            <li><button onclick="changesheet('../css/goofy.css')" id="btnCss" title="btnCss">Dark Mode</button></li>
         </ul>
     </nav>    
     <h2>Formulaire de contact<h2>
@@ -40,11 +40,11 @@
             </li>
             <li>
               <label for="msg">Message:</label>
-              <textarea id="msg" name="msg">Donnez votre avis (et votre carte bleue)</textarea>
+              <textarea id="msg" name="msg" placeholder="Donnez votre avis (et votre carte bleue)"></textarea>
             </li>
             <li>
-                <input type="checkbox" id="mere" name="mere" class = "checkmere">
                 <label for="mere" class="mere">J'accepte de vendre ma mère.</label>
+                <input type="checkbox" id="mere" name="mere" class = "checkmere">
             </li>
             <li>
               <button type="submit">Envoyer</button>

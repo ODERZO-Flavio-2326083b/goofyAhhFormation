@@ -1,0 +1,72 @@
+@import "style.css";
+
+[type="checkbox"].checkmere {
+	height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+label.mere {
+    color: red;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+form ul {
+    width: 70%;
+}
+
+form *{
+    list-style: none;
+    padding: 20px;
+    
+}
+
+form > ul > li {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 10px 25px 10px;
+    border-bottom: 1px solid white;
+    animation: 1s ease-out 0s 1 slideGauche;
+    display: flex;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border: 1px white solid;
+    background-color: rgb(199, 129, 0);
+    color: white;
+}
+
+label {
+    position: relative;
+    font-size: large;
+    bottom: 0;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border: 1px white solid;
+    background-color: rgb(199, 129, 0);
+    color: white;
+    resize: none;
+}

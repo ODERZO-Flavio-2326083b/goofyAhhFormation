@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vous avez des soucis dans la vie? Ne cherchez pas plus loin,
+    c'est ici que nous allons changer vie médiocre en vie qui ferait rêver les plus grands instagrammeurs.">
+    <title>DEVENIR RICHE</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/sanguin.css">
+</head>
+<body>
+    <header>
+        <h2>GoofyAhhFormation<h2>
+    </header>
+    <!-- bouton pour remonter en haut de la page -->
+    <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>
+    <nav>
+        <ul id = "menu">
+            <a href="../index.html"><li>Accueil</li></a>
+            <a href="formations.html"><li>Nos formations</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <li><img src="../img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
+                'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
+            <li><button onclick="changesheet()" id="btnCss" title="changesheet">Dark Mode ?</button></li>
+        </ul>
+    </nav>       
+    <h2>Endettement de sanguin<h2>
+    <form action="mailto:goofyahhformation@alwaysdata.net" method="POST" enctype="text/plain">
+        <ul>
+            <li>
+                <input type="text" id="name" placeholder="Nom et Prenom">
+            </li>
+            <li>
+                <input type="text" id="email" placeholder="Email">
+            </li>
+            <li>
+                <section class="payment">
+                    <input type="text" id="creditCardNumber" placeholder="Numéros de CB" style="font-size: 16px; width: 250px;">
+                    <input type="text" id="expirationDate" placeholder="MM/YY" style="font-size: 14px; width: 100px;">
+                    <input type="text" id="cvv" placeholder="CVV" style="font-size: 14px; width: 80px;">
+                    <input type="text" id="cardHolderName" placeholder="Nom du titulaire" style="font-size: 16px; width: 250px;">
+                </section>
+            </li>
+            <li>
+                <input type="checkbox" id="mere" name="mere" class = "checkmere">
+                <label for="mere" class="mere">Aucun remboursement ne sera effectué</label>
+            </li>
+            <li>
+              <button type="submit">Envoyer</button>
+            </li>
+        </ul>
+    </form>
+    <footer>
+        <p>© Copyright 2023 GoofyAhhFormation</p>
+    </footer>
+</body>
+
+<script src="../js/script.js"></script>

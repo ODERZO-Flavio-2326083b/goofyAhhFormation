@@ -11,7 +11,17 @@
     <header>
         <h2>GoofyAhhFormation<h2>
     </header>
-    <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>       
+    <button onclick="remonter()" id="btnRemonter" title="Remonter">Remonter</button>
+    <nav>
+        <ul id = "menu">
+            <a href="../index.html"><li>Accueil</li></a>
+            <a href="formations.html"><li>Nos formations</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <li><img src="../img/pub.png" alt="Une publicité d'un homme magnifique posant sur un pont, avec les textes suivant : 
+                'vous voulez plus réussir que ce mec ? achetez nos formations maintenant."></li>
+            <li><button onclick="changesheet()" id="btnCss" title="changesheet">Dark Mode ?</button></li>
+        </ul>
+    </nav>   
     <section class="center-container">
         <section class="container-top">
             <img class="img" src="../img/budget.png" />
@@ -22,7 +32,24 @@
                     Nous avons la solution à tous tes problèmes avec cette formation en seulement 3 étapes !
                 </p>
                 <br>
-                <a class="formation" href="html/formation2.html">Acheter la formation</a>
+                <a class="formation" href="#" onclick="openPopup()">Acheter la formation</a>
+                <section class="popup" id="paymentPopup">   
+                    <section class="payment">
+                        <input type="text" id="creditCardNumber" placeholder="Numéros de CB" style="font-size: 16px; width: 250px;">
+                        <input type="text" id="expirationDate" placeholder="MM/YY" style="font-size: 14px; width: 100px;">
+                        <input type="text" id="cvv" placeholder="CVV" style="font-size: 14px; width: 80px;">
+                        <input type="text" id="cardHolderName" placeholder="Nom du titulaire" style="font-size: 16px; width: 250px;">
+                    </section>
+                    <section class="payment">
+                        <a class="CB" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ENVOYER MES INFORMATIONS BANCAIRES</a>                
+                    <section class="payment">
+                        <a class="PayPal" href="https://paypal.me/kerbadoui">PayPal (AMIS/PROCHE)</a>
+                    </section>
+                    <section class="payment">
+                        <a class="Sanguin" href="sanguin.html">PAYER PAR ENDETTEMENT SANGUIN</a>
+                    </section>
+                    </section>
+                </section>
             </section>
         </section>
         <section class="text-middle">
@@ -44,4 +71,4 @@
  </body>
  </html>
  
- <script src="js/script.js"></script>
+ <script src="../js/script.js"></script>

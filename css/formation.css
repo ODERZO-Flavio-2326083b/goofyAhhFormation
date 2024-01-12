@@ -1,3 +1,5 @@
+@import "style.css";
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +9,27 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.payment {
+    text-align: center;
+    margin: 2%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/money.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px -5px 10px rgb(0, 0, 0);
+}
+  
+  .popup-content {
+    padding: 20px;
+  }
 
 #btnRemonter{
     color: white;
@@ -70,6 +93,39 @@ header {
     font-size: 20px;
 }
 
+.PayPal {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #044fda, #1d87ff); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.Sanguin {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #da0404, #ff1d1d); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.CB {
+    color: rgb(0, 0, 0); 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    background: linear-gradient(to left, #04da44, #0be04b); 
+    border: 1% solid rgb(46, 1, 1); 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .formation a {   
     color: rgb(0, 0, 0);
 }
@@ -94,11 +150,11 @@ footer {
     color: white;
     text-align: center;
     padding: 0.01% 0;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
+
 
 @media (max-width: 1000px) {
     .container-top{
